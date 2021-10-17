@@ -61,7 +61,7 @@ figcaption{
 .nav{
     position: relative;
     bottom: 10px;
-    left: 50%;
+    left: 30%;
     display: flex;
 }
 .button{
