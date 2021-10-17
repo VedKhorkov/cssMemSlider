@@ -3,33 +3,50 @@ body{
     flex-direction: column;
     align-items: center;
     margin: 0px;
-    margin-top: 5vh;   
+    margin-top: 5vh;  
+    background-image: url(./img/bg40.png); 
+}
+.tv_box{
+   border: 5px solid rgb(87, 85, 85);
+    box-shadow: 0px 5px 10px 30px rgba(34, 60, 80, 0.2) inset;
+    /* background-color: grey; */
+    background-image: url(./img/metal_background.jpg);
+    border-radius: 15px; 
+    max-width: auto;
+    max-height: auto;
+    
 }
 .sl_container{
-    border: 5px solid rgb(87, 85, 85);
-    box-shadow: 0px 5px 10px 30px rgba(34, 60, 80, 0.2) inset;
-    background-color: grey;
-    border-radius: 15px;
+    margin: 6vh 9vh;
+
+    /* border: 5px solid rgb(87, 85, 85); */
+    /* box-shadow: 0px 5px 10px 30px rgba(34, 60, 80, 0.2) inset; */
+    /* background-color: grey; */
+    border-radius: 10px;
+    background-image: url(./img/metal_background.jpg);
     /* width: 70vw; */
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
     /* new */
      position: relative;
     width: 50vw;
-    max-height: 60vh;
+    max-height: auto;
     
-    /* overflow: hidden; */
+    overflow: hidden;
    
     /* медиа  */
-    height: 70vh;  
+    /* height: 75vh;   */
 }
 .slider{
     position: relative;
+    /* top: 1vh; */
+    /* left: 2vw;
+    right: 2vw; */
      width: 200vw;
      height: 100%;
      display: flex;
-     border: 1px solid rgb(223, 17, 17);
+     /* border: 1px solid rgb(223, 17, 17); */
 }
 
 
@@ -42,6 +59,7 @@ input{
 .pic{
     width: 50vw;
     height: 100%; 
+    border-radius: 5px;
     /* object-fit: cover; */
     transition: all 1s ease;
 }
@@ -52,21 +70,29 @@ input{
 }
 .fig{
     margin: 0;
-    font-size: 2em;
+    font-size: 2vw;
+    max-width: 70%;
 }
 figcaption{
     position: relative;
-    left: 5%;
+    color: white;
+    font-style: italic;
+    /* left: 5%; */
 }
 .nav{
-    position: relative;
-    bottom: 10px;
-    left: 30%;
+    position: absolute;
+    bottom: 0;
+    right: -.5vw;
     display: flex;
+    /* display: block; */
+    /* width: 40px;
+    height: 200px; */
+    border: 1px solid rgb(223, 17, 17);
+    z-index: 10;
 }
 .button{
-    width: 30px;
-    height: 30px;
+    width: 2vw;
+    height: 2vw;
     border-radius: 50%;
     background-color: rgb(192, 174, 8);
     margin: 6px;
