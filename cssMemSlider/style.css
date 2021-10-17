@@ -50,7 +50,7 @@ body{
 }
 
 
-input{
+.slider input{
     
   display: none;
     
@@ -70,13 +70,15 @@ input{
 }
 .fig{
     margin: 0;
-    font-size: 2vw;
-    max-width: 70%;
+    font-size: 1.5vw;
+    max-width: 60%;
 }
 figcaption{
     position: relative;
     color: white;
     font-style: italic;
+    margin-top: 2vh;
+    background-image: url(./img/metal_background.jpg);
     /* left: 5%; */
 }
 .nav{
@@ -87,30 +89,73 @@ figcaption{
     /* display: block; */
     /* width: 40px;
     height: 200px; */
-    border: 1px solid rgb(223, 17, 17);
-    z-index: 10;
+    /* border: 1px solid rgb(223, 17, 17); */
+    background-image: url(./img/metal_background.jpg);
+    
 }
 .button{
-    width: 2vw;
-    height: 2vw;
-    border-radius: 50%;
-    background-color: rgb(192, 174, 8);
+    width: 3.5vw;
+    height: 3.5vw;
+    
+    /* background-color: rgb(70, 70, 192); */
     margin: 6px;
     cursor: pointer;
     /* transition: all 0.8s ease; */
 }
-.button:hover{
+.circle{
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2.3vw;
+    height: 2.3vw; 
+    background-color: #58a6ff;
+    border-radius: 50%;
+}
+.circle:hover{
+    background-color: rgb(237, 237, 243);
+}
+.circle::before{
+    content: "";
+    position: absolute;
+    width: 1.8vw;
+    height: 1.8vw;
+    background-image: url(./img/metal_background.jpg);
+    top: 49%;
+    left: 49%;
+    transform: translate(-49%, -49%);
+    border-radius: 50%;
+    opacity: 1;
+    
+}
+
+
+/* .button:hover{
     background-color: rgb(192, 66, 8);
+} */
+/*  */
+/* .button:hover + label:nth-child(1) > span{
+    background-color: white;
+} */
+/*  */
+/* label:nth-child(1) > span:checked {
+    display: none;
+  background-color: rgb(37, 230, 30);
+} */
+/* body > div > div > div.nav > label:nth-child(2) > span */
+.in2:checked + span::before{
+    opacity: 1;
 }
 #btn1:checked ~ .one{
-    margin-left: 0%;
+    margin-left: 0;     
 }
 #btn2:checked ~ .one{
-    margin-left: -25%;
+    margin-left: -50vw;
 }
 #btn3:checked ~ .one{
-    margin-left: -50%;
+    margin-left: -100vw;
 }
 #btn4:checked ~ .one{
-    margin-left: -75%;
+    margin-left: -150vw;
 }
